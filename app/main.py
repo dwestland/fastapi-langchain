@@ -14,8 +14,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-print(os.getenv("OPENAI_API_KEY"))
-
 chat_model = ChatOpenAI(model_name='gpt-3.5-turbo')
 
 loader=PyPDFLoader('./Docs/ChatGPT_wikipedia.pdf')
