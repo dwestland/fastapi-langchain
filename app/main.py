@@ -45,7 +45,7 @@ def answer_query(item:Item):
         response=index.query(item.query)
         return response
     except:
-        return {"messgage":"Some error happened"}
+        return {"message":"Some error happened"}
 
 
 app.include_router(api_router, prefix="/api/v1")
