@@ -10,7 +10,7 @@ __pycache__/
 *.so
 
 # Local Chroma db
-# .chroma/
+.chroma/
 db/
 
 # Distribution / packaging
