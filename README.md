@@ -19,7 +19,7 @@ source env/bin/activate
 
 ### Inatall the following libraries:
 ```
-pip install "fastapi[all]" uvicorn openai langchain pypdf  chromadb tiktoken
+pip install "fastapi[all]" uvicorn openai langchain pypdf chromadb tiktoken
 ```
 
 ### If you would like to shut down the environment:
