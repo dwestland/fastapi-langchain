@@ -1,10 +1,9 @@
+https://fastapi-langchain.vercel.app/
+
+
 # fastapi-template
 
 A FastAPI template with local development environment
-
-### Uses the following libraries:
-[FastAPI](https://fastapi.tiangolo.com/)<br>
-[uvicorn](https://www.uvicorn.org/)
 
 ## Setup dev environment:
 
@@ -20,7 +19,7 @@ source env/bin/activate
 
 ### Inatall the following libraries:
 ```
-pip install "fastapi[all]" uvicorn
+pip install "fastapi[all]" uvicorn openai langchain pypdf  chromadb tiktoken
 ```
 
 ### If you would like to shut down the environment:
@@ -40,16 +39,16 @@ source env/bin/activate
 ## Run application
 
 ```
-uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
+python -m uvicorn app.main:app --reload
 ```
 
 ### API access:
 
-[http://0.0.0.0:8080/](http://0.0.0.0:8080/)
+[http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ### Swager accees:
 
-[http://0.0.0.0:8080//\docs](http://0.0.0.0:8080/docs)
+[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ### Stop local server
 ```
