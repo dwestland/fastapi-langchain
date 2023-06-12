@@ -7,6 +7,7 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.indexes import VectorstoreIndexCreator
 from pydantic import BaseModel
 from app.api.api_v1.api import router as api_router
+from mangum import Mangum
 
 import os
 
@@ -20,6 +21,9 @@ loader=PyPDFLoader('./Docs/ChatGPT_wikipedia.pdf')
 index=VectorstoreIndexCreator().from_loaders([loader])
 
 app=FastAPI()
+
+# For AWS Lambda deployment:
+handler = Mangum(app)
 
 # CORS
 app.add_middleware(CORSMiddleware,
